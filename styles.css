@@ -85,4 +85,28 @@ body {
 
 #categorySelect {
     text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.label {
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+    
+    padding-top: 10px;
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 50px;
 }
