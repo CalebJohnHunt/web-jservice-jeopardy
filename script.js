@@ -49,8 +49,8 @@ function displayQuestions(questions, displayAll) {
     }
 
     output += "<div class='clue-table-header row'>";
-        output += "<div class='center-container clue-col col-lg-1'><div class='worth-header'><span>Value</span></div></div>";
-        output += "<div class='center-container clue-col col-lg-9'><div class='clue-header'><span>Clue</span></div></div>";
+        output += "<div class='center-container clue-col col-lg-2'><div class='worth-header'><span>Value</span></div></div>";
+        output += "<div class='center-container clue-col col-lg-8'><div class='clue-header'><span>Clue</span></div></div>";
         output += "<div class='center-container clue-col col-lg-2'><div class='worth-header'><span>Answer</span></div></div>";
     output += "</div>"; // .clue-header row
 
@@ -66,7 +66,7 @@ function displayQuestions(questions, displayAll) {
                 }
                 val = "<span class='guesstimate' title='Actually value unknown. This is an estimate.'>" + temp + "</span>"
             }
-            output += "<div class='center-container clue-col col-lg-1'><div class='worth center-container'><span>$" + val + "</span></div></div>";
+            output += "<div class='center-container clue-col col-lg-2'><div class='worth center-container'><span>$" + val + "</span></div></div>";
             
             val = questions[i].question
             if (!val) {
@@ -79,7 +79,7 @@ function displayQuestions(questions, displayAll) {
                     })
                 */
             }
-            output += "<div class='center-container clue-col col-lg-9'><div class='clue center-container'><span>" + val + "</span></div></div>";
+            output += "<div class='center-container clue-col col-lg-8'><div class='clue center-container'><span>" + val + "</span></div></div>";
             output += "<div class='center-container clue-col col-lg-2'><div class='answer center-container' id='" + questions[i].answer + "'><span>" + "Click to reveal answer" + "</span></div></div>";
             
         output += "</div>" // .clue-section

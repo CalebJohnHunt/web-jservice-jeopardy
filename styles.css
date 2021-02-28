@@ -1,8 +1,8 @@
 html, body {
-    /* background-color: #aaccff !important; */
+    background-color: #ddd !important;
     margin: 0;
     padding: 0;
-    /* color: #eee !important; */
+    color: #000 !important;
     min-height: 100%;
     text-align: center;
 
@@ -20,6 +20,8 @@ body {
 
 .clue-table-header {
     font-size: 25px;
+    color: black;
+    font-weight: bold;
 }
 
 .clue-row {
@@ -30,14 +32,21 @@ body {
     min-height: 100px;
 
     margin: 10px 0px;
+
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .clue-col {
-    /* padding: 0 20px; */
+    padding: 0 20px;
 }
 
 .worth {
     font-size: 20px;
+}
+
+h1 {
+    color: black;
 }
 
 .worth-header {
@@ -46,16 +55,21 @@ body {
 }
 
 .guesstimate {
-    color: red;
+    color: #c40606;
 }
 
 .clue {
     font-size: 18px;
+    width: 75%;
 }
 
 .clue-header {
     display: flex;
     flex-direction: column;
+}
+
+.category-date {
+    color: #000;
 }
 
 .answer {
@@ -78,9 +92,9 @@ body {
 
     min-width: 600px;
 
-    background-color: #99ddff;
+    background-color: #3388aa;
     border-radius: 10px;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 #categorySelect {
@@ -90,13 +104,18 @@ body {
 
 .label {
     font-size: 20px;
+    color: black;
+}
+
+#mainForm {
+    margin-bottom: 10px;
 }
 
 footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #fff;
+    background-color: #aaa;
     
     padding-top: 10px;
     
@@ -109,4 +128,12 @@ body::after {
     content: '';
     display: block;
     height: 50px;
+}
+select {
+
+    /* background-color: #99ddff !important; */
+}
+
+button {
+    /* background-color: #99ddff !important; */
 }
