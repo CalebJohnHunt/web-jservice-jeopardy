@@ -1,0 +1,88 @@
+html, body {
+    /* background-color: #aaccff !important; */
+    margin: 0;
+    padding: 0;
+    /* color: #eee !important; */
+    min-height: 100%;
+    text-align: center;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category {
+    text-transform: capitalize;
+}
+
+.clue-table-header {
+    font-size: 25px;
+}
+
+.clue-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    min-height: 100px;
+
+    margin: 10px 0px;
+}
+
+.clue-col {
+    /* padding: 0 20px; */
+}
+
+.worth {
+    font-size: 20px;
+}
+
+.worth-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.guesstimate {
+    color: red;
+}
+
+.clue {
+    font-size: 18px;
+}
+
+.clue-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer {
+    /* min-width: 150px; */
+}
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* width: 100%; */
+
+    /* min-width: 200px; */
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 600px;
+
+    background-color: #99ddff;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+#categorySelect {
+    text-transform: capitalize;
+}
