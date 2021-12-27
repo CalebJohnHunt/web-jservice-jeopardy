@@ -18,14 +18,14 @@ async function loadQuestions(e) {
 }
 
 async function getRandomQ() {
-    const url = "http://jservice.io/api/random";
+    const url = "https://jservice.io/api/random";
     const response = await fetch(url);
     const data = await response.json();
     return data[0];
 }
 
 async function getCategoryQs(q) {
-    var url = "http://jservice.io/api/clues?category=" + q.category.id;
+    var url = "https://jservice.io/api/clues?category=" + q.category.id;
     const response = await fetch(url);
     const data = response.json();
     return data;
@@ -73,7 +73,7 @@ function displayQuestions(questions, displayAll) {
                 val = "<span class='guesstimate'>No question provided. We apologize for this issue. It has been reported.</span>";
                 // Tried to report it. I think it has to be a POST request, so I'm not sure if I can do that via fetch? Oh well
                 /*
-                fetch('http://jservice.io/api/invalid?id=' + questions[i].id)
+                fetch('https://jservice.io/api/invalid?id=' + questions[i].id)
                     .then(reponse => {
                         console.log(reponse.json());
                     })
@@ -99,7 +99,7 @@ function show() {
 
 // Add categories to drop down
 async function getCategories() {
-    let response = await fetch("http://jservice.io/api/categories?count=10&offset=" + Math.floor(Math.random() * 300));
+    let response = await fetch("https://jservice.io/api/categories?count=10&offset=" + Math.floor(Math.random() * 300));
     let cats = await response.json();
     return cats;
 }
